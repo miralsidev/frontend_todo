@@ -17,7 +17,6 @@ const Login = () => {
             password: values.password
         })
         console.log("res-=--", res.data);
-        // toast('login succesfully..!!')
         if (res.data.status === 400) {
             toast(res.data.message)
         }
